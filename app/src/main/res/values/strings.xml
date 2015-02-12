@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Popular Photos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="usernamecaption_label">UsernameCaption</string>
+    <string name="likescount_label">LikesCount</string>
+
+</resources>
