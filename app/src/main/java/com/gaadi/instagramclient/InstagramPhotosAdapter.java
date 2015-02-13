@@ -2,6 +2,7 @@ package com.gaadi.instagramclient;
 
 import android.content.Context;
 import android.text.Html;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,8 +42,8 @@ public class InstagramPhotosAdapter extends ArrayAdapter<InstagramPhoto> {
         tvLikesCount.setText(likesCount_formatted);
         // Username & Caption in same TextView
         TextView tvUsernameCaption = (TextView) convertView.findViewById(R.id.tvUsernameCaption);
-        String formatted_username = "<b>" + photo.username + "</b>";
-        String username_caption = Html.fromHtml(formatted_username) + " -- " + photo.caption;
+        String formatted_username_caption = "<b>" + photo.username + "</b> -- " + photo.caption;
+        Spanned username_caption = Html.fromHtml(formatted_username_caption);
         tvUsernameCaption.setText(username_caption);
         // Image - Graphic
         ImageView ivPhoto = (ImageView) convertView.findViewById(R.id.ivPhoto);
